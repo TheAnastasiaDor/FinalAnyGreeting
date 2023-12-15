@@ -10,7 +10,9 @@ const port = 3000;
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:3000`);
+    // console.log(`Server running at http://localhost:3000`);
+console.log(`Server running at https://anygreeting.vercel.app/`);
+
 });
 
 // Configure OpenAI with your API key
