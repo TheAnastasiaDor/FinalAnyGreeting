@@ -6,12 +6,14 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 
-const port = 3000;
+// const port = 3000; <--when local host
+const port = process.env.PORT || 3000;
+
 
 // Start the server
 app.listen(port, () => {
-    // console.log(`Server running at http://localhost:3000`);
-console.log(`Server running at https://anygreeting.vercel.app/`);
+    // console.log(`Server running at http://localhost:3000`);<--when local host
+console.log(`Server running on port ${port}`);
 
 });
 
