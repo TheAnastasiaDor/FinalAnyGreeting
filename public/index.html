@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting Cards for All Occasions</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img src="AGlogo.svg" alt="Greeting" id="topImage">
+
+    <div class="header">
+        <!-- <h1>Greeting Cards for All Occasions</h1> -->
+    </div>
+    <div id="videoContainer">
+        <video id="envelVideo" src="/envel.mp4" autoplay muted loop></video></div>  
+        <div id="buttons" class="buttons"></div>
+    <div>
+    <button class="button" id="designCard">Design a Card</button>
+    </div>
+
+    <div id="inputFields" style="display: none;">
+        <h2><p style= "color:black;">What is the precipient's name? (as you call them)</p>
+            <input type="text" id="personName" placeholder="Enter recipient name">
+        <h2><p style= "color:black";>What is your name? (as they call you)</p>
+            <input type="text" id="userName" placeholder="Enter your name">
+        <p style="color:black;">What is their relation to you?</p>
+            <input type="text" id="relation" placeholder="Enter relation"></h2>
+        <h2><p style= "color:black;">What is the occasion?</p>
+            <input type="text" id="occasion" placeholder="Enter occasion"></h2>
+
+        <!-- Slider for closeness -->
+        <div class="slidecontainer">
+            <h2>How close are you to the recipient?</h2>
+            <input type="range" min="1" max="100" value="50" class="slider" id="closenessRange">
+            <p>Value: <span id="closenessValue"></span></p>
+        </div>
+
+        <!-- Slider for contact frequency -->
+        <div class="slidecontainer">
+            <h2>How often are you in contact?</h2>
+            <input type="range" min="1" max="100" value="50" class="slider" id="contactFrequencyRange">
+            <p>Value: <span id="contactFrequencyValue"></span></p>
+        </div>
+
+        <!-- Slider for formality -->
+        <div class="slidecontainer">
+            <h2>How formal do you want the tone to be?</h2>
+            <input type="range" min="1" max="100" value="50" class="slider" id="formalityRange">
+            <p>Value: <span id="formalityValue"></span></p>
+        </div>
+
+        <!-- Slider for cheerfulness -->
+        <div class="slidecontainer">
+            <h2>How cheerful do you want the tone to be?</h2>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cheerfulnessRange">
+            <p>Value: <span id="cheerfulnessValue"></span></p>
+        </div>
+        <!-- Slider for length -->
+        <div class="slidecontainer">
+    <h2>How long do you want the message to be?</h2>
+    <input type="range" min="1" max="100" value="50" class="slider" id="lengthRange">
+    <p>Value: <span id="lengthValue"></span></p>
+        </div>
+        <button class="button" id="submitBtn">Generate a Card</button>
+         </div>
+<div id="cardContainer">
+            <img src="/card.svg" alt="Card" id="cardImage">
+            <div id="messageContainer">
+                <p id="address"></p>
+                <p id="message"></p>
+                <p id="signature"></p>
+            </div>
+        </div>
+    
+<h1 id="pageTitle">Greeting Cards for All Occasions</h1>
+    
+    <script src="script.js"></script>
+</body>
+</html>
